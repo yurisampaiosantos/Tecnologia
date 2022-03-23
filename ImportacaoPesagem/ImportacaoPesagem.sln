@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportacaoPesagem", "ImportacaoPesagem\ImportacaoPesagem.csproj", "{6F1A024D-BE44-43C6-A386-9BF6C79780D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{DB7D1DB6-AA83-480C-A904-C237E3868F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServicePesagem", "WebServicePesagem\WebServicePesagem.csproj", "{36F18D2F-73B5-417D-94EA-66187DFBA8D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F1A024D-BE44-43C6-A386-9BF6C79780D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1A024D-BE44-43C6-A386-9BF6C79780D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1A024D-BE44-43C6-A386-9BF6C79780D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1A024D-BE44-43C6-A386-9BF6C79780D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB7D1DB6-AA83-480C-A904-C237E3868F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7D1DB6-AA83-480C-A904-C237E3868F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7D1DB6-AA83-480C-A904-C237E3868F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7D1DB6-AA83-480C-A904-C237E3868F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F18D2F-73B5-417D-94EA-66187DFBA8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F18D2F-73B5-417D-94EA-66187DFBA8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F18D2F-73B5-417D-94EA-66187DFBA8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F18D2F-73B5-417D-94EA-66187DFBA8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A3AE0B2-D530-4FE0-8048-5F6EAD314F84}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://wchltfs01:8080/tfs/eep
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAL\\DAL.csproj
+		SccProjectName1 = DAL
+		SccLocalPath1 = DAL
+		SccProjectUniqueName2 = ImportacaoPesagem\\ImportacaoPesagem.csproj
+		SccProjectName2 = ImportacaoPesagem
+		SccLocalPath2 = ImportacaoPesagem
+		SccProjectUniqueName3 = WebServicePesagem\\WebServicePesagem.csproj
+		SccProjectName3 = WebServicePesagem
+		SccLocalPath3 = WebServicePesagem
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="epccq.Text" xml:space="preserve">
+    <value> SELECT FOSE_CNTR_CODIGO, FOSE_ID, FOSE_NUMERO, FOSE_REV, FOSE_DESCRICAO, FOSE_QTD_PREVISTA, FOSE_SBCN_ID, FOSE_DT_CADASTRO, SIFS_DESCRICAO, FCME_SIGLA, FCME_PRODUTO_COM_ESTOQUE, FCME_DT_CADASTRO, FCES_SIGLA, FCES_DESCRICAO, FCES_NIVEL, FCES_PESO_REL_CRON, FCES_WBS_ORDEM, FCES_LIBERA_ESTOQUE, FOSM_STATUS, FSME_DATA, FSME_AVANCO_ACM, FSME_QTD_ACM, FSME_DT_CADASTRO, FSMP_DATA, FSMP_AVANCO_ACM, FSMP_QTD_ACM, FSMP_DT_CADASTRO, FSEI_DT_CADASTRO, FSEI_OBS, ARES_SIGLA, ARES_NOME FROM  EPCCQ.FOLHA_SERVICO T1 JOIN (SELECT CNTR_CODIGO FROM EPCCQ.CONTRATO WHERE CNTR_CODIGO='Conversão') T2 ON T1.FOSE_CNTR_CODIGO=T2.CNTR_CODIGO JOIN EPCCQ.SITUACAO_FOLHA_SERVICO T3 ON T1.FOSE_CNTR_CODIGO=T3.SIFS_CNTR_CODIGO AND T1.FOSE_SIFS_ID=T3.SIFS_ID JOIN EPCCQ.FOLHA_CRITERIO_MEDICAO T4 ON T1.FOSE_CNTR_CODIGO=T4.FCME_CNTR_CODIGO AND T1.FOSE_FCME_ID=T4.FCME_ID JOIN EPCCQ.FOLHA_CRITERIO_ESTRUTURA T5 ON T4.FCME_CNTR_CODIGO=T5.FCES_CNTR_CODIGO AND T4.FCME_ID=T5.FCES_FCME_ID JOIN EPCCQ.FOLHA_SERVICO_MEDICAO T6 ON (T1.FOSE_CNTR_CODIGO=T6.FOSM_CNTR_CODIGO AND T1.FOSE_ID=T6.FOSM_FOSE_ID) AND (T5.FCES_CNTR_CODIGO=T6.FOSM_CNTR_CODIGO AND T5.FCES_ID=T6.FOSM_FCES_ID) LEFT JOIN   ( select T.* from EPCCQ.FOLHA_SERVICO_MEDICAO_EXEC T JOIN ( select FSME_FOSM_ID FSME_FOSM_ID_T,MAX(FSME_DATA) FSME_DATA_T from EPCCQ.FOLHA_SERVICO_MEDICAO_EXEC TT1 JOIN (select FSME_FOSM_ID FSME_FOSM_ID_T,MAX(FSME_DT_CADASTRO) FSME_DT_CADASTRO_T from EPCCQ.FOLHA_SERVICO_MEDICAO_EXEC GROUP BY FSME_FOSM_ID) TT2 ON TT1.FSME_FOSM_ID=TT2.FSME_FOSM_ID_T AND TT1.FSME_DT_CADASTRO=TT2.FSME_DT_CADASTRO_T GROUP BY FSME_FOSM_ID ) TT0 ON T.FSME_FOSM_ID=TT0.FSME_FOSM_ID_T AND T.FSME_DATA=TT0.FSME_DATA_T ) T7 ON T6.FOSM_CNTR_CODIGO=T7.FSME_CNTR_CODIGO AND T6.FOSM_ID=T7.FSME_FOSM_ID LEFT JOIN  ( select T.* from EPCCQ.FOLHA_SERVICO_MEDICAO_PROG T JOIN ( select FSMP_FOSM_ID FSMP_FOSM_ID_T,MAX(FSMP_DATA) FSMP_DATA_T from EPCCQ.FOLHA_SERVICO_MEDICAO_PROG TT1 JOIN (select FSMP_FOSM_ID FSMP_FOSM_ID_T,MAX(FSMP_DT_CADASTRO) FSMP_DT_CADASTRO_T from EPCCQ.FOLHA_SERVICO_MEDICAO_PROG GROUP BY FSMP_FOSM_ID) TT2 ON TT1.FSMP_FOSM_ID=TT2.FSMP_FOSM_ID_T AND TT1.FSMP_DT_CADASTRO=TT2.FSMP_DT_CADASTRO_T GROUP BY FSMP_FOSM_ID ) TT0 ON T.FSMP_FOSM_ID=TT0.FSMP_FOSM_ID_T AND T.FSMP_DATA=TT0.FSMP_DATA_T ) T8 ON T6.FOSM_CNTR_CODIGO=T8.FSMP_CNTR_CODIGO AND T6.FOSM_ID=T8.FSMP_FOSM_ID LEFT JOIN (select T.* FROM EPCCQ.FOLHA_SERVICO_ITEM T JOIN (select FSIT_FOSE_ID FSIT_FOSE_ID_T,MAX(FSIT_ID) FSIT_ID_T from EPCCQ.FOLHA_SERVICO_ITEM GROUP BY FSIT_FOSE_ID) TT0 ON T.FSIT_FOSE_ID=TT0.FSIT_FOSE_ID_T AND T.FSIT_ID=TT0.FSIT_ID_T) T9 ON T1.FOSE_CNTR_CODIGO=T9.FSIT_CNTR_CODIGO AND T1.FOSE_ID=T9.FSIT_FOSE_ID LEFT JOIN EPCCQ.FOLHA_SERVICO_ESTOQUE_ITEM T10 ON T9.FSIT_CNTR_CODIGO=T10.FSEI_CNTR_CODIGO AND T9.FSIT_ID=T10.FSEI_FSIT_ID LEFT JOIN EPCCQ.AREA_ESTOCAGEM T11 ON T10.FSEI_CNTR_CODIGO=T11.ARES_CNTR_CODIGO AND T10.FSEI_ARES_ID=T11.ARES_ID where regexp_like(T1.FOSE_DESCRICAO,'^SPOOL$','i')</value>
+  </data>
+  <metadata name="fechar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A8DF4BB-ECA9-426F-B567-F1852A1662DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SisPLAN.net</RootNamespace>
+    <AssemblyName>SisPLAN.net</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\wchlfs01\sistemas%24\SisPLAN.Net\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\wchlfs01\sistemas%24\SisPLAN.Net\</InstallUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>SisPLAN.NET</ProductName>
+    <PublisherName>Enseada - Sistemas</PublisherName>
+    <SuiteName>Planejamento</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>5.11.16.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B730272CD1E7B8DF9D20E3BE226409CFE8A1B86F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\CORPORATIVO\SISTEMAS\SisPLAN.Net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\CORPORATIVO\SISTEMAS\SisPLAN.Net\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\CORPORATIVO\SISTEMAS\SisPLAN.Net\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\CORPORATIVO\SISTEMAS\SisPLAN.Net\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAcompanhaPunchlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcompanhaPunchlist.designer.cs">
+      <DependentUpon>frmAcompanhaPunchlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcuracidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcuracidade.designer.cs">
+      <DependentUpon>frmAcuracidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvancoCompletacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvancoCompletacao.designer.cs">
+      <DependentUpon>frmAvancoCompletacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmControleFolhaServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControleFolhaServico.designer.cs">
+      <DependentUpon>frmControleFolhaServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstoqueMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstoqueMaterial.designer.cs">
+      <DependentUpon>frmEstoqueMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportaControleGeralEIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportaControleGeralEIT.Designer.cs">
+      <DependentUpon>frmImportaControleGeralEIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportaCorridaMateriais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportaCorridaMateriais.Designer.cs">
+      <DependentUpon>frmImportaCorridaMateriais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportaPastas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportaPastas.Designer.cs">
+      <DependentUpon>frmImportaPastas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportaPunchList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportaPunchList.Designer.cs">
+      <DependentUpon>frmImportaPunchList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaMovimentoPastas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaMovimentoPastas.designer.cs">
+      <DependentUpon>frmListaMovimentoPastas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMateriaisPendentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMateriaisPendentes.designer.cs">
+      <DependentUpon>frmMateriaisPendentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMateriaisPendentesPasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMateriaisPendentesPasta.designer.cs">
+      <DependentUpon>frmMateriaisPendentesPasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMontagemTubulacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMontagemTubulacao.designer.cs">
+      <DependentUpon>frmMontagemTubulacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentaPastas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentaPastas.Designer.cs">
+      <DependentUpon>frmMovimentaPastas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPastaResumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPastaResumo.designer.cs">
+      <DependentUpon>frmPastaResumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPastaResumoAreaDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPastaResumoAreaDisciplina.designer.cs">
+      <DependentUpon>frmPastaResumoAreaDisciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutividadePorUa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutividadePorUa.Designer.cs">
+      <DependentUpon>frmProdutividadePorUa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPunchlistPasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPunchlistPasta.designer.cs">
+      <DependentUpon>frmPunchlistPasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpoolsPendentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpoolsPendentes.designer.cs">
+      <DependentUpon>frmSpoolsPendentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatusMateriais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatusMateriais.designer.cs">
+      <DependentUpon>frmStatusMateriais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatusTubulacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatusTubulacao.designer.cs">
+      <DependentUpon>frmStatusTubulacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVincularGrupoCriterio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVincularGrupoCriterio.Designer.cs">
+      <DependentUpon>frmVincularGrupoCriterio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgrupamentoMateriais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgrupamentoMateriais.Designer.cs">
+      <DependentUpon>frmAgrupamentoMateriais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCelulasTrabalhoResumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCelulasTrabalhoResumo.designer.cs">
+      <DependentUpon>frmCelulasTrabalhoResumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportaItensControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportaItensControle.Designer.cs">
+      <DependentUpon>frmImportaItensControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportaMateriaisTubulacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportaMateriaisTubulacao.Designer.cs">
+      <DependentUpon>frmImportaMateriaisTubulacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPendenciaMateriais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPendenciaMateriais.designer.cs">
+      <DependentUpon>frmPendenciaMateriais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRAM.designer.cs">
+      <DependentUpon>frmRAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecebimentoMateriais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecebimentoMateriais.designer.cs">
+      <DependentUpon>frmRecebimentoMateriais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResumoSemanalAtividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResumoSemanalAtividades.designer.cs">
+      <DependentUpon>frmResumoSemanalAtividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSisplanMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSisplanMonitor.designer.cs">
+      <DependentUpon>frmSisplanMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiSisplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdiSisplan.designer.cs">
+      <DependentUpon>MdiSisplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="ico.ico" />
+    <Content Include="Resources\Aguarde.gif" />
+    <Content Include="Resources\Animation.gif" />
+    <Content Include="Resources\BarraEvolucao.gif" />
+    <Content Include="Resources\btn-gerar-relatorio.png" />
+    <Content Include="Resources\Error.png" />
+    <None Include="Resources\wallpaper34.png" />
+    <Content Include="S.ico" />
+    <EmbeddedResource Include="frmAcompanhaPunchlist.resx">
+      <DependentUpon>frmAcompanhaPunchlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcuracidade.resx">
+      <DependentUpon>frmAcuracidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvancoCompletacao.resx">
+      <DependentUpon>frmAvancoCompletacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControleFolhaServico.resx">
+      <DependentUpon>frmControleFolhaServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstoqueMaterial.resx">
+      <DependentUpon>frmEstoqueMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportaControleGeralEIT.resx">
+      <DependentUpon>frmImportaControleGeralEIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportaCorridaMateriais.resx">
+      <DependentUpon>frmImportaCorridaMateriais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportaPunchList.resx">
+      <DependentUpon>frmImportaPunchList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaMovimentoPastas.resx">
+      <DependentUpon>frmListaMovimentoPastas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMateriaisPendentes.resx">
+      <DependentUpon>frmMateriaisPendentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMontagemTubulacao.resx">
+      <DependentUpon>frmMontagemTubulacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentaPastas.resx">
+      <DependentUpon>frmMovimentaPastas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPastaResumo.resx">
+      <DependentUpon>frmPastaResumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPastaResumoAreaDisciplina.resx">
+      <DependentUpon>frmPastaResumoAreaDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutividadePorUa.resx">
+      <DependentUpon>frmProdutividadePorUa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPunchlistPasta.resx">
+      <DependentUpon>frmPunchlistPasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpoolsPendentes.resx">
+      <DependentUpon>frmSpoolsPendentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatusMateriais.resx">
+      <DependentUpon>frmStatusMateriais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlcAcuracidade.rdlc" />
+    <EmbeddedResource Include="rdlcAvancoCompletacao.rdlc" />
+    <EmbeddedResource Include="rdlcEstoqueMaterial.rdlc" />
+    <EmbeddedResource Include="rdlcListaMovimentoPastas.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlcMateriaisPendentes.rdlc" />
+    <EmbeddedResource Include="rdlcMateriaisPendentesPasta.rdlc" />
+    <EmbeddedResource Include="rdlcMontagemTubulação.rdlc" />
+    <EmbeddedResource Include="rdlcPunchlistPasta.rdlc" />
+    <EmbeddedResource Include="rdlcResumoPasta.rdlc" />
+    <EmbeddedResource Include="rdlcResumoPastaAreaDisciplina.rdlc" />
+    <EmbeddedResource Include="rdlcSpoolsPendentes.rdlc" />
+    <EmbeddedResource Include="rdlcStatusMateriais.rdlc" />
+    <EmbeddedResource Include="rdlcStatusTub.rdlc" />
+    <None Include="Properties\DataSources\BLL.AcAvancoCompletacaoBLL.datasource" />
+    <None Include="Properties\DataSources\DTO.AcAcuracidadeDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcAplicabilidadeMaterialDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcAvancoCompletacaoDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcAvnCriterioDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcControleFolhaServicoDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcMateriaisPendentesDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcMontagemTubulacaoDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcResumoSemanalAtividadesDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcSpoolsPendentesDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcStatusFabDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcStatusMateriaisDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcStatusTubDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.CollectionCpPunchlistDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.CpPastaResumoDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.CpPastaResumoSubgrupoDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.CpPunchlistDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.VwAcEstoqueMaterialDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.VwCpMaterialPendenteDTO+attributeName.datasource" />
+    <None Include="Properties\DataSources\DTO.VwCpMaterialPendenteDTO+propertyName.datasource" />
+    <None Include="Properties\DataSources\DTO.VwCpMaterialPendenteDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.VwCpMovimentoDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.VwCpPastaDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.VwCpPastaUltMovDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.VwCpPunchlistDTO.datasource" />
+    <None Include="Resources\Warning1.png" />
+    <None Include="Resources\Error1.png" />
+    <Content Include="Resources\excel.png" />
+    <Content Include="Resources\Information.png" />
+    <None Include="Resources\Information1.png" />
+    <Content Include="Resources\S.ico" />
+    <Content Include="Resources\Warning.png" />
+    <EmbeddedResource Include="CelulasTrabalhoResumo.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatusTubulacao.resx">
+      <DependentUpon>frmStatusTubulacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVincularGrupoCriterio.resx">
+      <DependentUpon>frmVincularGrupoCriterio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgrupamentoMateriais.resx">
+      <DependentUpon>frmAgrupamentoMateriais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCelulasTrabalhoResumo.resx">
+      <DependentUpon>frmCelulasTrabalhoResumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportaItensControle.resx">
+      <DependentUpon>frmImportaItensControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportaMateriaisTubulacao.resx">
+      <DependentUpon>frmImportaMateriaisTubulacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPendenciaMateriais.resx">
+      <DependentUpon>frmPendenciaMateriais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRAM.resx">
+      <DependentUpon>frmRAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecebimentoMateriais.resx">
+      <DependentUpon>frmRecebimentoMateriais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResumoSemanalAtividades.resx">
+      <DependentUpon>frmResumoSemanalAtividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSisplanMonitor.resx">
+      <DependentUpon>frmSisplanMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="oci.dll" />
+    <Content Include="orannzsbb11.dll" />
+    <Content Include="oraocci11.dll" />
+    <Content Include="oraociei11.dll" />
+    <Content Include="oraociicus11.dll" />
+    <Content Include="OraOps11w.dll" />
+    <Content Include="PendenciaMateriais.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="MdiSisplan.resx">
+      <DependentUpon>MdiSisplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rdlcControleFolhaServico.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="rdlcRAMAtividade.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rdlcResumoSemanalAtividades.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RecebimentoMateriais.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\DTO.AcPendenciaMaterialDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcRamAtividadeDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.AcSemanaDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.VwAcRecebimentoMateriaisDTO.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SisPLAN.net_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{92a48b2c-1d25-4944-9689-b91180be836c}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{d477c379-36c1-4256-8096-e7db22d1d1e9}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GenericClasses\GenericClasses.csproj">
+      <Project>{85d305c9-64d4-4ced-8d13-1e59b7f9af75}</Project>
+      <Name>GenericClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enseada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomarca EEP Menor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Oracle.DataAccess">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

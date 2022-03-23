@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AE979AA-7077-467D-B211-5B0CABA905FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wfFolhaApropriacao</RootNamespace>
+    <AssemblyName>wfFolhaApropriacao</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\WCHLFS01\sistemas%24\Apropriacao_MOD\Entrada_de_Dados\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <InstallUrl>\\WCHLFS01\sistemas%24\Apropriacao_MOD\Entrada_de_Dados\</InstallUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>PSP - Portal de Suporte ao Planejamento</ProductName>
+    <PublisherName>Enseada - Sistemas</PublisherName>
+    <SuiteName>PSP - Portal de Suporte ao Planejamento</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>16.3.24.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F57334D59345E937B05034BF33955147D7E08159</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>wfFolhaApropriacao_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>P.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendar.Designer.cs">
+      <DependentUpon>frmCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindActivities.Designer.cs">
+      <DependentUpon>frmFindActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindCraft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindCraft.Designer.cs">
+      <DependentUpon>frmFindCraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFolhaApropriacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFolhaApropriacao.Designer.cs">
+      <DependentUpon>frmFolhaApropriacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpFaltas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpFaltas.Designer.cs">
+      <DependentUpon>frmImpFaltas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpAtividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpAtividades.Designer.cs">
+      <DependentUpon>frmImpAtividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpNovos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpNovos.Designer.cs">
+      <DependentUpon>frmImpNovos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpStatus.Designer.cs">
+      <DependentUpon>frmImpStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelApropriacaoPeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelApropriacaoPeriodo.Designer.cs">
+      <DependentUpon>frmRelApropriacaoPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelProdutividade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelProdutividade.Designer.cs">
+      <DependentUpon>frmRelProdutividade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelMovimentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelMovimentacao.Designer.cs">
+      <DependentUpon>frmRelMovimentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIGeral.Designer.cs">
+      <DependentUpon>MDIGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="conGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conGrid.Designer.cs">
+      <DependentUpon>conGrid.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCalendar.resx">
+      <DependentUpon>frmCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindActivities.resx">
+      <DependentUpon>frmFindActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindCraft.resx">
+      <DependentUpon>frmFindCraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFolhaApropriacao.resx">
+      <DependentUpon>frmFolhaApropriacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpFaltas.resx">
+      <DependentUpon>frmImpFaltas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpAtividades.resx">
+      <DependentUpon>frmImpAtividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpNovos.resx">
+      <DependentUpon>frmImpNovos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpStatus.resx">
+      <DependentUpon>frmImpStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelApropriacaoPeriodo.resx">
+      <DependentUpon>frmRelApropriacaoPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelProdutividade.resx">
+      <DependentUpon>frmRelProdutividade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelMovimentacao.resx">
+      <DependentUpon>frmRelMovimentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIGeral.resx">
+      <DependentUpon>MDIGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="conGrid.resx">
+      <DependentUpon>conGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="wfFolhaApropiacao_TemporaryKey.pfx" />
+    <None Include="wfFolhaApropriacao_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{47eac579-8105-42d5-8736-abdf193fbf23}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{38542bed-1b73-4827-ad00-315d065f1ab6}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{3b002950-3659-4a00-8973-76aca3694abc}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash_screen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="oci.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\1 %28165%29.jpg" />
+    <Content Include="P.ico" />
+    <Content Include="Resources\Apropriar.png" />
+    <Content Include="Resources\btClose.png" />
+    <Content Include="Resources\C.ico" />
+    <Content Include="Resources\P.ico" />
+    <None Include="Resources\bg3.png" />
+    <None Include="Resources\bg2.png" />
+    <None Include="Resources\mascara1.png" />
+    <None Include="Resources\mascara.png" />
+    <None Include="Resources\Preparar.png" />
+    <None Include="Resources\bg1.png" />
+    <None Include="Resources\0192.jpg" />
+    <Content Include="Resources\A.ico" />
+    <None Include="Resources\Printer-icon.png" />
+    <None Include="Resources\icone_print.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add.bmp" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\application_form.png" />
+    <None Include="Resources\abrir.png" />
+    <Content Include="Resources\Apropriar.jpg" />
+    <None Include="Resources\importar1.jpg" />
+    <None Include="Resources\importar.jpg" />
+    <None Include="Resources\atualizar.jpg" />
+    <None Include="Resources\ico_lupa.gif" />
+    <None Include="Resources\ico_lupa %281%29.gif" />
+    <None Include="Resources\BuscaRapida.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="orannzsbb11.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="oraocci11.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="oraociei11.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="oraociicus11.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OraOps11w.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{4CC61DC4-A7EF-4EFB-B975-93B7CC076BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CI", "Replat\CI.csproj", "{D858B9FF-A4E9-469C-A846-CE0105D61BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{91113EA6-5E2E-413E-82B2-E70DCA292F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{9F68EA32-5C67-4219-BEDF-B5DDBDF4C825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnseadaDatabaseTools", "DatabaseTools\EnseadaDatabaseTools.csproj", "{0B09505E-ECC2-4604-A13D-4309BC4669DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericClasses", "GenericClasses\GenericClasses.csproj", "{BE1D9F9F-28A3-4D38-ADCF-6BBBE6E1F250}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://wchltfs01:8080/tfs/eep
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BLL\\BLL.csproj
+		SccProjectName1 = BLL
+		SccLocalPath1 = BLL
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = DatabaseTools\\EnseadaDatabaseTools.csproj
+		SccProjectName3 = DatabaseTools
+		SccLocalPath3 = DatabaseTools
+		SccProjectUniqueName4 = DTO\\DTO.csproj
+		SccProjectName4 = DTO
+		SccLocalPath4 = DTO
+		SccProjectUniqueName5 = GenericClasses\\GenericClasses.csproj
+		SccProjectName5 = GenericClasses
+		SccLocalPath5 = GenericClasses
+		SccProjectUniqueName6 = Replat\\CI.csproj
+		SccProjectName6 = Replat
+		SccLocalPath6 = Replat
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CC61DC4-A7EF-4EFB-B975-93B7CC076BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC61DC4-A7EF-4EFB-B975-93B7CC076BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC61DC4-A7EF-4EFB-B975-93B7CC076BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC61DC4-A7EF-4EFB-B975-93B7CC076BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D858B9FF-A4E9-469C-A846-CE0105D61BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D858B9FF-A4E9-469C-A846-CE0105D61BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D858B9FF-A4E9-469C-A846-CE0105D61BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D858B9FF-A4E9-469C-A846-CE0105D61BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91113EA6-5E2E-413E-82B2-E70DCA292F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91113EA6-5E2E-413E-82B2-E70DCA292F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91113EA6-5E2E-413E-82B2-E70DCA292F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91113EA6-5E2E-413E-82B2-E70DCA292F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F68EA32-5C67-4219-BEDF-B5DDBDF4C825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F68EA32-5C67-4219-BEDF-B5DDBDF4C825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F68EA32-5C67-4219-BEDF-B5DDBDF4C825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F68EA32-5C67-4219-BEDF-B5DDBDF4C825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B09505E-ECC2-4604-A13D-4309BC4669DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B09505E-ECC2-4604-A13D-4309BC4669DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B09505E-ECC2-4604-A13D-4309BC4669DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B09505E-ECC2-4604-A13D-4309BC4669DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE1D9F9F-28A3-4D38-ADCF-6BBBE6E1F250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1D9F9F-28A3-4D38-ADCF-6BBBE6E1F250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1D9F9F-28A3-4D38-ADCF-6BBBE6E1F250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1D9F9F-28A3-4D38-ADCF-6BBBE6E1F250}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

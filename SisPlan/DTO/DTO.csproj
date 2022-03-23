@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D477C379-36C1-4256-8096-E7DB22D1D1E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcAcuracidadeDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AcAvancoBkpDTO.cs" />
+    <Compile Include="AcAvancoCompletacaoDTO.cs" />
+    <Compile Include="AcAvnCriterioDTO.cs" />
+    <Compile Include="AcAvnGrupoCriterioDTO.cs" />
+    <Compile Include="AcControleFolhaServicoDTO.cs" />
+    <Compile Include="AcControleProducaoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AcControleProducaoLogDTO.cs" />
+    <Compile Include="AcCorridaMaterialDTO.cs" />
+    <Compile Include="AcCorridaMaterialItemDTO.cs" />
+    <Compile Include="AcItemControleDTO.cs" />
+    <Compile Include="AcLocalizacaoDTO.cs" />
+    <Compile Include="AcMateriaisPendentesDTO.cs" />
+    <Compile Include="AcMontagemTubulacaoDTO.cs" />
+    <Compile Include="AcPrevisaoEngenhariaDTO.cs" />
+    <Compile Include="AcRamAtividadeDTO.cs" />
+    <Compile Include="AcRamAtividadeStageDTO.cs" />
+    <Compile Include="AcRegiaoDTO.cs" />
+    <Compile Include="AcResumoSemanalAtividadesDTO.cs" />
+    <Compile Include="AcSetorDTO.cs" />
+    <Compile Include="AcSpoolsPendentesDTO.cs" />
+    <Compile Include="AcStatusFoseUpdtCntrlDTO.cs" />
+    <Compile Include="AcStatusMateriaisDTO.cs" />
+    <Compile Include="AcStatusTubDTO.cs" />
+    <Compile Include="AcUnidadeRegionalDTO.cs" />
+    <Compile Include="AcUnidadeRegionalSISEPCDTO.cs" />
+    <Compile Include="CpAreaDTO.cs" />
+    <Compile Include="CpAreaRespPendenciaDTO.cs" />
+    <Compile Include="CpEscopoDTO.cs" />
+    <Compile Include="CpLocalizacaoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CpMaterialPendenteDTO.cs" />
+    <Compile Include="CpMovimentoDTO.cs" />
+    <Compile Include="CpPastaDTO.cs" />
+    <Compile Include="CpPastaResumoDTO.cs" />
+    <Compile Include="CpPastaResumoSubgrupoDTO.cs" />
+    <Compile Include="CpPrevistoDTO.cs" />
+    <Compile Include="CpPunchlistDTO.cs" />
+    <Compile Include="CpPunchListTicketDTO.cs" />
+    <Compile Include="CpStatusMovimentoDTO.cs" />
+    <Compile Include="CpSubsistemaOperacionalDTO.cs" />
+    <Compile Include="CpTipoPendenciaDTO.cs" />
+    <Compile Include="CpUsuarioDTO.cs" />
+    <Compile Include="ElAvnFoseDTO.cs" />
+    <Compile Include="ElControleGeralEitDTO.cs" />
+    <Compile Include="FcesTotaisDTO.cs" />
+    <Compile Include="IntLocaisDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IntTarefasDTO.cs" />
+    <Compile Include="LoggedUserDTO.cs" />
+    <Compile Include="ProjEleRcptDTO.cs" />
+    <Compile Include="ProjEstPcDimensionDTO.cs" />
+    <Compile Include="ProjEstRcptDTO.cs" />
+    <Compile Include="ProjGenEmailDTO.cs" />
+    <Compile Include="ProjJusRcptDTO.cs" />
+    <Compile Include="ProjOutRcptDTO.cs" />
+    <Compile Include="ProjPlatAreaDTO.cs" />
+    <Compile Include="ProjTubHistoryDTO.cs" />
+    <Compile Include="ProjTubLogDTO.cs" />
+    <Compile Include="ProjTubRcptDTO.cs" />
+    <Compile Include="ProjTubRcptTeeWeeDTO.cs" />
+    <Compile Include="AcGrupoCriterioDTO.cs" />
+    <Compile Include="AcPendenciaFolhaServicoDTO.cs" />
+    <Compile Include="AcPendenciaMaterialDTO.cs" />
+    <Compile Include="AcSemanaDTO.cs" />
+    <Compile Include="BaseDTO.cs" />
+    <Compile Include="LimitesPeriodoDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VwAcAcuracidadeDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwAcAtributoPersonalizadoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwAcEstoqueMaterialDTO.cs" />
+    <Compile Include="VwAcGrupoCriterioMedicaoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwAcQuantidadeAtividadeDTO.cs" />
+    <Compile Include="VwAcRecebimentoMateriaisDTO.cs" />
+    <Compile Include="VwAvnFoseEletricaDTO.cs" />
+    <Compile Include="VwCpMaterialPendenteDTO.cs" />
+    <Compile Include="VwCpMovimentoDTO.cs" />
+    <Compile Include="VwCpPastaDTO.cs" />
+    <Compile Include="VwCpPastaUltMovDTO.cs" />
+    <Compile Include="VwCpPunchlistDTO.cs" />
+    <Compile Include="VwGrupoCriterioMedicaoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwGrupoCriterioMedicaoFullDTO.cs" />
+    <Compile Include="VwRmItemDTO.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

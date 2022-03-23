@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseCapture", "LicenseCapture\LicenseCapture.csproj", "{CE81E90D-B9DF-4EB3-8B51-ED0991A8B6A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{95F434C0-7139-4440-B1B5-790BF2D3AAF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOD", "MOD\MOD.csproj", "{516DA6FF-CF36-4A4A-A258-49EBD5642C3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEG", "NEG\NEG.csproj", "{EC0DBCC5-8A42-4638-92B8-B033FE4F8D39}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://wchltfs01:8080/tfs/eep
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAL\\DAL.csproj
+		SccProjectName1 = DAL
+		SccLocalPath1 = DAL
+		SccProjectUniqueName2 = LicenseCapture\\LicenseCapture.csproj
+		SccProjectName2 = LicenseCapture
+		SccLocalPath2 = LicenseCapture
+		SccProjectUniqueName3 = MOD\\MOD.csproj
+		SccProjectName3 = MOD
+		SccLocalPath3 = MOD
+		SccProjectUniqueName4 = NEG\\NEG.csproj
+		SccProjectName4 = NEG
+		SccLocalPath4 = NEG
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE81E90D-B9DF-4EB3-8B51-ED0991A8B6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE81E90D-B9DF-4EB3-8B51-ED0991A8B6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE81E90D-B9DF-4EB3-8B51-ED0991A8B6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE81E90D-B9DF-4EB3-8B51-ED0991A8B6A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F434C0-7139-4440-B1B5-790BF2D3AAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F434C0-7139-4440-B1B5-790BF2D3AAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F434C0-7139-4440-B1B5-790BF2D3AAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F434C0-7139-4440-B1B5-790BF2D3AAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{516DA6FF-CF36-4A4A-A258-49EBD5642C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{516DA6FF-CF36-4A4A-A258-49EBD5642C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{516DA6FF-CF36-4A4A-A258-49EBD5642C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{516DA6FF-CF36-4A4A-A258-49EBD5642C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0DBCC5-8A42-4638-92B8-B033FE4F8D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0DBCC5-8A42-4638-92B8-B033FE4F8D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0DBCC5-8A42-4638-92B8-B033FE4F8D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0DBCC5-8A42-4638-92B8-B033FE4F8D39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

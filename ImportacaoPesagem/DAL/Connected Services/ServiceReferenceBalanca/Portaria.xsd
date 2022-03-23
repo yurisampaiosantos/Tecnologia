@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://wdcbalanca01.intranet.local:5050/Portaria.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="ConsultarPesagens">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DataInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_DataFim" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagensResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPesagensResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagensPlaca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DataInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_DataFim" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_Placa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagensPlacaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPesagensPlacaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagensDataHora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_TipoData" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_OrigemData" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DataInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_DataFim" type="xs:dateTime" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_HoraInicio" type="q1:duration" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_HoraFim" type="q2:duration" />
+        <xs:element minOccurs="0" name="_Placa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagensDataHoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPesagensDataHoraResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagemPorIdExtPrePesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExternoPrePesagem" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPesagemPorIdExtPrePesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPesagemPorIdExtPrePesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReabrirPesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReabrirPesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReabrirPesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReabrirPesagemPorIdExtPrePesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExternoPrePesagem" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReabrirPesagemPorIdExtPrePesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReabrirPesagemPorIdExtPrePesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelarPesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Motivo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelarPesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancelarPesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelarPesagemPorIdExtPrePesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExternoPrePesagem" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Motivo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelarPesagemPorIdExtPrePesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancelarPesagemPorIdExtPrePesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPrePesagens">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DataInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_DataFim" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPrePesagensResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPrePesagensResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPrePesagemPorIdExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPrePesagemPorIdExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPrePesagemPorIdExtResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirPrePesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Movimento" type="xs:int" />
+        <xs:element minOccurs="0" name="_PlacaCavalo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PlacaCarreta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoTransportadora" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoMotorista" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_MinutaRomaneio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLNotasFiscais" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLProdutosAdicionais" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirPrePesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirPrePesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarPrePesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Movimento" type="xs:int" />
+        <xs:element minOccurs="0" name="_PlacaCavalo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PlacaCarreta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoTransportadora" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoMotorista" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_MinutaRomaneio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLNotasFiscais" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLProdutosAdicionais" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarPrePesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarPrePesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirPrePesagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirPrePesagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirPrePesagemResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPrePesagemAutomacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPrePesagemAutomacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarPrePesagemAutomacaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirPrePesagemAutomacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CodigoTag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Movimento" type="xs:int" />
+        <xs:element minOccurs="0" name="_PlacaCavalo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PlacaCarreta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoTransportadora" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoMotorista" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Ativada" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_MinutaRomaneio" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirPrePesagemAutomacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirPrePesagemAutomacaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarPrePesagemAutomacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CodigoTag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Movimento" type="xs:int" />
+        <xs:element minOccurs="0" name="_PlacaCavalo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PlacaCarreta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoTransportadora" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoMotorista" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Ativada" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_MinutaRomaneio" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarPrePesagemAutomacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarPrePesagemAutomacaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirPrePesagemAutomacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirPrePesagemAutomacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirPrePesagemAutomacaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtivarDesativarPrePesagemAutomacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Ativar" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtivarDesativarPrePesagemAutomacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AtivarDesativarPrePesagemAutomacaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirTag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdTag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirTagResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirTagResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarTag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdTag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarTagResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarTagResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirTag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirTagResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirTagResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExisteTag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExisteTagResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExisteTagResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarProdutoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Descricao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Composto" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_NumeroIOBalanca" type="xs:int" />
+        <xs:element minOccurs="0" name="_XMLComposicoes" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirProdutoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Descricao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Composto" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_NumeroIOBalanca" type="xs:int" />
+        <xs:element minOccurs="0" name="_XMLComposicoes" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarProdutoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirProdutoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReativarProdutoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CPFCNPJ" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarClienteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirClienteFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirClienteFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirClienteFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirClienteJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirClienteJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirClienteJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarClienteFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarClienteFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarClienteFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarClienteJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarClienteJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarClienteJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirClienteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReativarClienteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarMotorista">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CPFCNPJ" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarMotoristaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarMotoristaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirMotoristaFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirMotoristaFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirMotoristaFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarMotoristaFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarMotoristaFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarMotoristaFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirMotorista">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirMotoristaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirMotoristaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarMotorista">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarMotoristaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReativarMotoristaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTransportadora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CPFCNPJ" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTransportadoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarTransportadoraResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirTransportadoraFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirTransportadoraFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirTransportadoraFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirTransportadoraJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirTransportadoraJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirTransportadoraJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarTransportadoraFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarTransportadoraFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarTransportadoraFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarTransportadoraJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarTransportadoraJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarTransportadoraJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirTransportadora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirTransportadoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirTransportadoraResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarTransportadora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarTransportadoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReativarTransportadoraResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarVisitante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CPFCNPJ" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarVisitanteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarVisitanteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirVisitanteFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirVisitanteFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirVisitanteFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirVisitanteJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirVisitanteJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirVisitanteJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarVisitanteFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarVisitanteFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarVisitanteFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarVisitanteJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarVisitanteJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarVisitanteJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirVisitante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirVisitanteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirVisitanteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarVisitante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarVisitanteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReativarVisitanteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarProdutor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CPFCNPJ" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarProdutorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarProdutorResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirProdutorFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirProdutorFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirProdutorFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirProdutorJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirProdutorJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirProdutorJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarProdutorFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaFisica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarProdutorFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarProdutorFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarProdutorJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NomeRazaoSocial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeAbreviado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLPessoaJuridica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_XMLEndereco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarProdutorJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarProdutorJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirProdutor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirProdutorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirProdutorResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarProdutor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReativarProdutorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReativarProdutorResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPessoaFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DataNascimento" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_CPF" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_RG" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_CNH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_CategoriaCNH" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomePai" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeMae" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPessoaFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GerarXMLPessoaFisicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPessoaJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CNPJ" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_NomeFantasia" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_AosCuidados" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_CNAE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPessoaJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GerarXMLPessoaJuridicaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLEndereco">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Logradouro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Numero" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Complemento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Bairro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_CodigoCidade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_CEP" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLEnderecoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GerarXMLEnderecoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPrePesagemNotaFiscal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_NumeroNotaFiscal" type="xs:int" />
+        <xs:element minOccurs="0" name="_PesoNotaFiscal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_PesoLiquido" type="xs:int" />
+        <xs:element minOccurs="0" name="_Volume" type="xs:int" />
+        <xs:element minOccurs="0" name="_NumeroPedido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DataEmissao" type="xs:dateTime" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_HoraEmissao" type="q3:duration" />
+        <xs:element minOccurs="0" name="_ChaveNFe" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPrePesagemNotaFiscalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GerarXMLPrePesagemNotaFiscalResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPrePesagemProdutoAdicional">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLPrePesagemProdutoAdicionalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GerarXMLPrePesagemProdutoAdicionalResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLProdutoComposicao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExternoProdutoItem" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Quantidade" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_Porcentagem" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_PorcentagemTolerancia" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLProdutoComposicaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GerarXMLProdutoComposicaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLOrdemProducaoComposicao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_QuantidadeDesejada" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_PorcentagemDesejada" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_PorcentagemTolerancia" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarXMLOrdemProducaoComposicaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GerarXMLOrdemProducaoComposicaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarVeiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Placa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarVeiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarVeiculoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirVeiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Placa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Modelo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PesoTara" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PlacaCarreta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoMotorista" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoTransportadora" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_OutrosDados1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirVeiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirVeiculoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarVeiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Placa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Modelo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PesoTara" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_Observacao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_PlacaCarreta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoMotorista" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoTransportadora" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_OutrosDados1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarVeiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarVeiculoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirVeiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Placa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirVeiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirVeiculoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarAuditoriasAutomacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExternoPrePesagem" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarAuditoriasAutomacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarAuditoriasAutomacaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOrdemProducao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOrdemProducaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarOrdemProducaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirOrdemProducao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_QuantidadeProduzir" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_IdExternoDepositoProdutoFinal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DataExecucao" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_XMLOrdensComposicao" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirOrdemProducaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirOrdemProducaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarOrdemProducao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_IdExternoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_QuantidadeProduzir" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_IdExternoDepositoProdutoFinal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DataExecucao" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_XMLOrdensComposicao" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarOrdemProducaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarOrdemProducaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirOrdemProducao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirOrdemProducaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirOrdemProducaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDeposito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDepositoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarDepositoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirDeposito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Descricao" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirDepositoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirDepositoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarDeposito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Descricao" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarDepositoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarDepositoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirDeposito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_IdExterno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirDepositoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirDepositoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

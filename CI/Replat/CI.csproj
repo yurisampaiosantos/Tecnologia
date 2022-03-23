@@ -1,0 +1,1237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D858B9FF-A4E9-469C-A846-CE0105D61BF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CI</RootNamespace>
+    <AssemblyName>CI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\WCHLFS01\sistemas%24\RePLAT.Net\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\WCHLFS01\sistemas%24\RePLAT.Net\</InstallUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>C.I - Camada Intermediária</ProductName>
+    <PublisherName>EEP  - Sistemas de Informação</PublisherName>
+    <SuiteName>Planejamento</SuiteName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>16.7.29.2</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C80F990EE7620BA4417B443E39FE4F8C112495E0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RePLAT.Net_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\CI.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\DTO\Properties\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBatimentosNFS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosNFS.Designer.cs">
+      <DependentUpon>frmBatimentosNFS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosNS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosNS.Designer.cs">
+      <DependentUpon>frmBatimentosNS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacaoDetalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacaoDetalhes.Designer.cs">
+      <DependentUpon>frmAplicacaoDetalhes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevolucaoInvalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevolucaoInvalida.Designer.cs">
+      <DependentUpon>frmDevolucaoInvalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaldoFacoesMinimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaldoFacoesMinimas.Designer.cs">
+      <DependentUpon>frmSaldoFacoesMinimas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanilhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanilhao.Designer.cs">
+      <DependentUpon>frmPlanilhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFabricadoSemEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFabricadoSemEntrada.Designer.cs">
+      <DependentUpon>frmFabricadoSemEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFabricadosComSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFabricadosComSaldo.Designer.cs">
+      <DependentUpon>frmFabricadosComSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaldoReservaNeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaldoReservaNeg.Designer.cs">
+      <DependentUpon>frmSaldoReservaNeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacoesMinimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacoesMinimas.Designer.cs">
+      <DependentUpon>frmFacoesMinimas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFolhaServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFolhaServico.Designer.cs">
+      <DependentUpon>frmFolhaServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmbienteAgendado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmbienteAgendado.Designer.cs">
+      <DependentUpon>frmAmbienteAgendado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfeForaDaIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfeForaDaIn.Designer.cs">
+      <DependentUpon>frmNfeForaDaIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNftNfsGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNftNfsGeral.Designer.cs">
+      <DependentUpon>frmNftNfsGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogDeEnvio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogDeEnvio.Designer.cs">
+      <DependentUpon>frmLogDeEnvio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNftNfsSemEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNftNfsSemEntrada.Designer.cs">
+      <DependentUpon>frmNftNfsSemEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfeGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfeGeral.Designer.cs">
+      <DependentUpon>frmNfeGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntradaFabricado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntradaFabricado.Designer.cs">
+      <DependentUpon>frmEntradaFabricado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRomaneioGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRomaneioGeral.Designer.cs">
+      <DependentUpon>frmRomaneioGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfSemEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfSemEntrada.Designer.cs">
+      <DependentUpon>frmTransfSemEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUndFracionada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUndFracionada.Designer.cs">
+      <DependentUpon>frmUndFracionada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservasAplicacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservasAplicacoes.Designer.cs">
+      <DependentUpon>frmReservasAplicacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfEstoque.Designer.cs">
+      <DependentUpon>frmTransfEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRequisicaoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequisicaoMaterial.Designer.cs">
+      <DependentUpon>frmRequisicaoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservaProduto.Designer.cs">
+      <DependentUpon>frmReservaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoscomSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoscomSaldo.Designer.cs">
+      <DependentUpon>frmProdutoscomSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfsDiferenteBaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfsDiferenteBaixa.Designer.cs">
+      <DependentUpon>frmNfsDiferenteBaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaixaSemNfs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaixaSemNfs.Designer.cs">
+      <DependentUpon>frmBaixaSemNfs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFSporLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFSporLote.Designer.cs">
+      <DependentUpon>frmNFSporLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfsAlteradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfsAlteradas.Designer.cs">
+      <DependentUpon>frmNfsAlteradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMiniFIFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMiniFIFO.Designer.cs">
+      <DependentUpon>frmMiniFIFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpComAlertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpComAlertas.Designer.cs">
+      <DependentUpon>frmOpComAlertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutosDetalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutosDetalhes.Designer.cs">
+      <DependentUpon>frmProdutosDetalhes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParceirosComAlertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParceirosComAlertas.Designer.cs">
+      <DependentUpon>frmParceirosComAlertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocationscomSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocationscomSaldo.Designer.cs">
+      <DependentUpon>frmLocationscomSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpGeral.Designer.cs">
+      <DependentUpon>frmOpGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExecucoesInvalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExecucoesInvalidas.Designer.cs">
+      <DependentUpon>frmExecucoesInvalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosIC.Designer.cs">
+      <DependentUpon>frmBatimentosIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosTJ.Designer.cs">
+      <DependentUpon>frmBatimentosTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosTI.Designer.cs">
+      <DependentUpon>frmBatimentosTI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosBF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosBF.Designer.cs">
+      <DependentUpon>frmBatimentosBF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosBJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosBJ.Designer.cs">
+      <DependentUpon>frmBatimentosBJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosNFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosNFT.Designer.cs">
+      <DependentUpon>frmBatimentosNFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosQK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosQK.Designer.cs">
+      <DependentUpon>frmBatimentosQK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosQL.Designer.cs">
+      <DependentUpon>frmBatimentosQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosRM.Designer.cs">
+      <DependentUpon>frmBatimentosRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNemDuplicada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNemDuplicada.Designer.cs">
+      <DependentUpon>frmNemDuplicada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDicionarioProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDicionarioProdutos.Designer.cs">
+      <DependentUpon>frmDicionarioProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNemVariasNfe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNemVariasNfe.Designer.cs">
+      <DependentUpon>frmNemVariasNfe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfeRecebimentoDiferente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfeRecebimentoDiferente.Designer.cs">
+      <DependentUpon>frmNfeRecebimentoDiferente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNemDatasInvalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNemDatasInvalidas.Designer.cs">
+      <DependentUpon>frmNemDatasInvalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNemGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNemGeral.Designer.cs">
+      <DependentUpon>frmNemGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfsSemBaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfsSemBaixa.Designer.cs">
+      <DependentUpon>frmNfsSemBaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutosNaoCadastrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutosNaoCadastrados.Designer.cs">
+      <DependentUpon>frmProdutosNaoCadastrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutosUndDiferente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutosUndDiferente.Designer.cs">
+      <DependentUpon>frmProdutosUndDiferente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservaMaiorNEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservaMaiorNEM.Designer.cs">
+      <DependentUpon>frmReservaMaiorNEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoscomAcerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoscomAcerto.Designer.cs">
+      <DependentUpon>frmProdutoscomAcerto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRequisicaoComReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequisicaoComReserva.Designer.cs">
+      <DependentUpon>frmRequisicaoComReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoscomAlertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoscomAlertas.Designer.cs">
+      <DependentUpon>frmProdutoscomAlertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNftAlteradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNftAlteradas.Designer.cs">
+      <DependentUpon>frmNftAlteradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFeDiferenteNEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFeDiferenteNEM.Designer.cs">
+      <DependentUpon>frmNFeDiferenteNEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFtNFsItemDuplicado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFtNFsItemDuplicado.Designer.cs">
+      <DependentUpon>frmNFtNFsItemDuplicado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfsNovas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfsNovas.Designer.cs">
+      <DependentUpon>frmNfsNovas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNftNfsRefDuplicada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNftNfsRefDuplicada.Designer.cs">
+      <DependentUpon>frmNftNfsRefDuplicada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNftNovas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNftNovas.Designer.cs">
+      <DependentUpon>frmNftNovas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFtNFsComAlertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFtNFsComAlertas.Designer.cs">
+      <DependentUpon>frmNFtNFsComAlertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfeNovas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfeNovas.Designer.cs">
+      <DependentUpon>frmNfeNovas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFEcomAlertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFEcomAlertas.Designer.cs">
+      <DependentUpon>frmNFEcomAlertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfeVariasNem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfeVariasNem.Designer.cs">
+      <DependentUpon>frmNfeVariasNem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNEMsemItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNEMsemItens.Designer.cs">
+      <DependentUpon>frmNEMsemItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFtDiferenteRomaneio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFtDiferenteRomaneio.Designer.cs">
+      <DependentUpon>frmNFtDiferenteRomaneio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacoesInvalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacoesInvalidas.Designer.cs">
+      <DependentUpon>frmAplicacoesInvalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatimentosNFE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatimentosNFE.Designer.cs">
+      <DependentUpon>frmBatimentosNFE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOPsAlteradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOPsAlteradas.Designer.cs">
+      <DependentUpon>frmOPsAlteradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpDuplicada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpDuplicada.Designer.cs">
+      <DependentUpon>frmOpDuplicada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoDetalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoDetalhes.Designer.cs">
+      <DependentUpon>frmProdutoDetalhes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmbiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmbiente.Designer.cs">
+      <DependentUpon>frmAmbiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScript.Designer.cs">
+      <DependentUpon>frmScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuery.Designer.cs">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRomaneioSemNFt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRomaneioSemNFt.Designer.cs">
+      <DependentUpon>frmRomaneioSemNFt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFtSemRomaneio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFtSemRomaneio.Designer.cs">
+      <DependentUpon>frmNFtSemRomaneio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresaxAreaTransito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresaxAreaTransito.Designer.cs">
+      <DependentUpon>frmEmpresaxAreaTransito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresas.Designer.cs">
+      <DependentUpon>frmEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoRomaneioInvalido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoRomaneioInvalido.Designer.cs">
+      <DependentUpon>frmTipoRomaneioInvalido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFtNFsSemProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFtNFsSemProduto.Designer.cs">
+      <DependentUpon>frmNFtNFsSemProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFtNFsSemItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFtNFsSemItens.Designer.cs">
+      <DependentUpon>frmNFtNFsSemItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlatNFxPlatNEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlatNFxPlatNEM.Designer.cs">
+      <DependentUpon>frmPlatNFxPlatNEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsumoSemConsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsumoSemConsumo.Designer.cs">
+      <DependentUpon>frmInsumoSemConsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfDuplicada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfDuplicada.Designer.cs">
+      <DependentUpon>frmTransfDuplicada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOPsExecutadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOPsExecutadas.Designer.cs">
+      <DependentUpon>frmOPsExecutadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFsemItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFsemItens.Designer.cs">
+      <DependentUpon>frmNFsemItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdNcmPeso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdNcmPeso.Designer.cs">
+      <DependentUpon>frmProdNcmPeso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParceirosCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParceirosCad.Designer.cs">
+      <DependentUpon>frmParceirosCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevolucao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevolucao.Designer.cs">
+      <DependentUpon>frmDevolucao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditorXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditorXML.Designer.cs">
+      <DependentUpon>frmEditorXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaliseUndMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaliseUndMedida.Designer.cs">
+      <DependentUpon>frmAnaliseUndMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFsemNEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFsemNEM.Designer.cs">
+      <DependentUpon>frmNFsemNEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacoes.Designer.cs">
+      <DependentUpon>frmMovimentacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstornoNF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstornoNF.Designer.cs">
+      <DependentUpon>frmEstornoNF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExecutadasSemAplicacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExecutadasSemAplicacao.Designer.cs">
+      <DependentUpon>frmExecutadasSemAplicacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovExterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovExterno.Designer.cs">
+      <DependentUpon>frmMovExterno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocationsAlterados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocationsAlterados.Designer.cs">
+      <DependentUpon>frmLocationsAlterados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfExternas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfExternas.Designer.cs">
+      <DependentUpon>frmTransfExternas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRomaneioIncorreto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRomaneioIncorreto.Designer.cs">
+      <DependentUpon>frmRomaneioIncorreto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNfeAlteradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNfeAlteradas.Designer.cs">
+      <DependentUpon>frmNfeAlteradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfOrg.Designer.cs">
+      <DependentUpon>frmTransfOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutosAlterados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutosAlterados.Designer.cs">
+      <DependentUpon>frmProdutosAlterados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfInterna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfInterna.Designer.cs">
+      <DependentUpon>frmTransfInterna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaldo.Designer.cs">
+      <DependentUpon>frmSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFTporLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFTporLote.Designer.cs">
+      <DependentUpon>frmNFTporLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFEporLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFEporLote.Designer.cs">
+      <DependentUpon>frmNFEporLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOPsNovas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOPsNovas.Designer.cs">
+      <DependentUpon>frmOPsNovas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpostoCalculado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpostoCalculado.Designer.cs">
+      <DependentUpon>frmImpostoCalculado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisponiveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisponiveis.Designer.cs">
+      <DependentUpon>frmDisponiveis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgendarEnviar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendarEnviar.Designer.cs">
+      <DependentUpon>frmAgendarEnviar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBatimentosNFS.resx">
+      <DependentUpon>frmBatimentosNFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosNS.resx">
+      <DependentUpon>frmBatimentosNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacaoDetalhes.resx">
+      <DependentUpon>frmAplicacaoDetalhes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevolucaoInvalida.resx">
+      <DependentUpon>frmDevolucaoInvalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaldoFacoesMinimas.resx">
+      <DependentUpon>frmSaldoFacoesMinimas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanilhao.resx">
+      <DependentUpon>frmPlanilhao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFabricadoSemEntrada.resx">
+      <DependentUpon>frmFabricadoSemEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFabricadosComSaldo.resx">
+      <DependentUpon>frmFabricadosComSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaldoReservaNeg.resx">
+      <DependentUpon>frmSaldoReservaNeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacoesMinimas.resx">
+      <DependentUpon>frmFacoesMinimas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFolhaServico.resx">
+      <DependentUpon>frmFolhaServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmbienteAgendado.resx">
+      <DependentUpon>frmAmbienteAgendado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfeForaDaIn.resx">
+      <DependentUpon>frmNfeForaDaIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNftNfsGeral.resx">
+      <DependentUpon>frmNftNfsGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogDeEnvio.resx">
+      <DependentUpon>frmLogDeEnvio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNftNfsSemEntrada.resx">
+      <DependentUpon>frmNftNfsSemEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfeGeral.resx">
+      <DependentUpon>frmNfeGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntradaFabricado.resx">
+      <DependentUpon>frmEntradaFabricado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRomaneioGeral.resx">
+      <DependentUpon>frmRomaneioGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfSemEntrada.resx">
+      <DependentUpon>frmTransfSemEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUndFracionada.resx">
+      <DependentUpon>frmUndFracionada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservasAplicacoes.resx">
+      <DependentUpon>frmReservasAplicacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfEstoque.resx">
+      <DependentUpon>frmTransfEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequisicaoMaterial.resx">
+      <DependentUpon>frmRequisicaoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservaProduto.resx">
+      <DependentUpon>frmReservaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoscomSaldo.resx">
+      <DependentUpon>frmProdutoscomSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfsDiferenteBaixa.resx">
+      <DependentUpon>frmNfsDiferenteBaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaixaSemNfs.resx">
+      <DependentUpon>frmBaixaSemNfs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFSporLote.resx">
+      <DependentUpon>frmNFSporLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfsAlteradas.resx">
+      <DependentUpon>frmNfsAlteradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMiniFIFO.resx">
+      <DependentUpon>frmMiniFIFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpComAlertas.resx">
+      <DependentUpon>frmOpComAlertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutosDetalhes.resx">
+      <DependentUpon>frmProdutosDetalhes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParceirosComAlertas.resx">
+      <DependentUpon>frmParceirosComAlertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocationscomSaldo.resx">
+      <DependentUpon>frmLocationscomSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpGeral.resx">
+      <DependentUpon>frmOpGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExecucoesInvalidas.resx">
+      <DependentUpon>frmExecucoesInvalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosIC.resx">
+      <DependentUpon>frmBatimentosIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosTJ.resx">
+      <DependentUpon>frmBatimentosTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosTI.resx">
+      <DependentUpon>frmBatimentosTI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosBF.resx">
+      <DependentUpon>frmBatimentosBF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosBJ.resx">
+      <DependentUpon>frmBatimentosBJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosNFT.resx">
+      <DependentUpon>frmBatimentosNFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosQK.resx">
+      <DependentUpon>frmBatimentosQK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosQL.resx">
+      <DependentUpon>frmBatimentosQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosRM.resx">
+      <DependentUpon>frmBatimentosRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNemDuplicada.resx">
+      <DependentUpon>frmNemDuplicada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDicionarioProdutos.resx">
+      <DependentUpon>frmDicionarioProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNemVariasNfe.resx">
+      <DependentUpon>frmNemVariasNfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfeRecebimentoDiferente.resx">
+      <DependentUpon>frmNfeRecebimentoDiferente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNemDatasInvalidas.resx">
+      <DependentUpon>frmNemDatasInvalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNemGeral.resx">
+      <DependentUpon>frmNemGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfsSemBaixa.resx">
+      <DependentUpon>frmNfsSemBaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutosNaoCadastrados.resx">
+      <DependentUpon>frmProdutosNaoCadastrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutosUndDiferente.resx">
+      <DependentUpon>frmProdutosUndDiferente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservaMaiorNEM.resx">
+      <DependentUpon>frmReservaMaiorNEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoscomAcerto.resx">
+      <DependentUpon>frmProdutoscomAcerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequisicaoComReserva.resx">
+      <DependentUpon>frmRequisicaoComReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoscomAlertas.resx">
+      <DependentUpon>frmProdutoscomAlertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNftAlteradas.resx">
+      <DependentUpon>frmNftAlteradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFeDiferenteNEM.resx">
+      <DependentUpon>frmNFeDiferenteNEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFtNFsItemDuplicado.resx">
+      <DependentUpon>frmNFtNFsItemDuplicado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfsNovas.resx">
+      <DependentUpon>frmNfsNovas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNftNfsRefDuplicada.resx">
+      <DependentUpon>frmNftNfsRefDuplicada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNftNovas.resx">
+      <DependentUpon>frmNftNovas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFtNFsComAlertas.resx">
+      <DependentUpon>frmNFtNFsComAlertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfeNovas.resx">
+      <DependentUpon>frmNfeNovas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFEcomAlertas.resx">
+      <DependentUpon>frmNFEcomAlertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfeVariasNem.resx">
+      <DependentUpon>frmNfeVariasNem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNEMsemItens.resx">
+      <DependentUpon>frmNEMsemItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFtDiferenteRomaneio.resx">
+      <DependentUpon>frmNFtDiferenteRomaneio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacoesInvalidas.resx">
+      <DependentUpon>frmAplicacoesInvalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatimentosNFE.resx">
+      <DependentUpon>frmBatimentosNFE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOPsAlteradas.resx">
+      <DependentUpon>frmOPsAlteradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpDuplicada.resx">
+      <DependentUpon>frmOpDuplicada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoDetalhes.resx">
+      <DependentUpon>frmProdutoDetalhes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmbiente.resx">
+      <DependentUpon>frmAmbiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScript.resx">
+      <DependentUpon>frmScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRomaneioSemNFt.resx">
+      <DependentUpon>frmRomaneioSemNFt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFtSemRomaneio.resx">
+      <DependentUpon>frmNFtSemRomaneio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresaxAreaTransito.resx">
+      <DependentUpon>frmEmpresaxAreaTransito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresas.resx">
+      <DependentUpon>frmEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoRomaneioInvalido.resx">
+      <DependentUpon>frmTipoRomaneioInvalido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFtNFsSemProduto.resx">
+      <DependentUpon>frmNFtNFsSemProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFtNFsSemItens.resx">
+      <DependentUpon>frmNFtNFsSemItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlatNFxPlatNEM.resx">
+      <DependentUpon>frmPlatNFxPlatNEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsumoSemConsumo.resx">
+      <DependentUpon>frmInsumoSemConsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfDuplicada.resx">
+      <DependentUpon>frmTransfDuplicada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOPsExecutadas.resx">
+      <DependentUpon>frmOPsExecutadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFsemItens.resx">
+      <DependentUpon>frmNFsemItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdNcmPeso.resx">
+      <DependentUpon>frmProdNcmPeso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParceirosCad.resx">
+      <DependentUpon>frmParceirosCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevolucao.resx">
+      <DependentUpon>frmDevolucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditorXML.resx">
+      <DependentUpon>frmEditorXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaliseUndMedida.resx">
+      <DependentUpon>frmAnaliseUndMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFsemNEM.resx">
+      <DependentUpon>frmNFsemNEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacoes.resx">
+      <DependentUpon>frmMovimentacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstornoNF.resx">
+      <DependentUpon>frmEstornoNF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExecutadasSemAplicacao.resx">
+      <DependentUpon>frmExecutadasSemAplicacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovExterno.resx">
+      <DependentUpon>frmMovExterno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocationsAlterados.resx">
+      <DependentUpon>frmLocationsAlterados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfExternas.resx">
+      <DependentUpon>frmTransfExternas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRomaneioIncorreto.resx">
+      <DependentUpon>frmRomaneioIncorreto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNfeAlteradas.resx">
+      <DependentUpon>frmNfeAlteradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfOrg.resx">
+      <DependentUpon>frmTransfOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutosAlterados.resx">
+      <DependentUpon>frmProdutosAlterados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfInterna.resx">
+      <DependentUpon>frmTransfInterna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaldo.resx">
+      <DependentUpon>frmSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFTporLote.resx">
+      <DependentUpon>frmNFTporLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFEporLote.resx">
+      <DependentUpon>frmNFEporLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOPsNovas.resx">
+      <DependentUpon>frmOPsNovas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpostoCalculado.resx">
+      <DependentUpon>frmImpostoCalculado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisponiveis.resx">
+      <DependentUpon>frmDisponiveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgendarEnviar.resx">
+      <DependentUpon>frmAgendarEnviar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Fakes Include="Fakes\EPPlus.fakes" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RePLAT.Net_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{9f68ea32-5c67-4219-bedf-b5ddbdf4c825}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{4cc61dc4-a7ef-4efb-b975-93b7cc076beb}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GenericClasses\GenericClasses.csproj">
+      <Project>{be1d9f9f-28a3-4d38-adcf-6bbbe6e1f250}</Project>
+      <Name>GenericClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CI.ico" />
+    <Content Include="oci.dll" />
+    <Content Include="orannzsbb11.dll" />
+    <Content Include="oraocci11.dll" />
+    <Content Include="oraociei11.dll" />
+    <Content Include="oraociicus11.dll" />
+    <Content Include="OraOps11w.dll" />
+    <None Include="Resources\icoLocalizar.png" />
+    <None Include="Resources\IcoEpPlus1.png" />
+    <None Include="Resources\IcoEpPlus.png" />
+    <None Include="Resources\IcoCSV1.png" />
+    <None Include="Resources\IcoDisponiveis.png" />
+    <None Include="Resources\xls.png" />
+    <None Include="Resources\xml.png" />
+    <None Include="Resources\date.png" />
+    <None Include="Resources\application_form1.png" />
+    <None Include="Resources\application_form.png" />
+    <None Include="Resources\mascara1.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\enviar.png" />
+    <None Include="Resources\importar1.jpg" />
+    <None Include="Resources\importar.jpg" />
+    <None Include="Resources\Apropriar.png" />
+    <None Include="Resources\atualizar.jpg" />
+    <None Include="Resources\img301.jpg" />
+    <None Include="Resources\img30.jpg" />
+    <None Include="Resources\img291.jpg" />
+    <None Include="Resources\salvar.png" />
+    <None Include="Resources\img29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

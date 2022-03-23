@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{47EAC579-8105-42D5-8736-ABDF193FBF23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{38542BED-1B73-4827-AD00-315D065F1AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{3B002950-3659-4A00-8973-76ACA3694ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wfPrintFolhaApropriacao", "wfPrintFolhaApropiacao\wfPrintFolhaApropriacao.csproj", "{B4C4AB64-E16A-455F-BE03-EA24204C7A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wfFolhaApropriacao", "wfFolhaApropriacao\wfFolhaApropriacao.csproj", "{2AE979AA-7077-467D-B211-5B0CABA905FF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://wchltfs01:8080/tfs/eep
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAL\\DAL.csproj
+		SccProjectName1 = DAL
+		SccLocalPath1 = DAL
+		SccProjectUniqueName2 = Modelo\\Modelo.csproj
+		SccProjectName2 = Modelo
+		SccLocalPath2 = Modelo
+		SccProjectUniqueName3 = Negocio\\Negocio.csproj
+		SccProjectName3 = Negocio
+		SccLocalPath3 = Negocio
+		SccProjectUniqueName4 = wfFolhaApropriacao\\wfFolhaApropriacao.csproj
+		SccProjectName4 = wfFolhaApropriacao
+		SccLocalPath4 = wfFolhaApropriacao
+		SccProjectUniqueName5 = wfPrintFolhaApropiacao\\wfPrintFolhaApropriacao.csproj
+		SccProjectName5 = wfPrintFolhaApropiacao
+		SccLocalPath5 = wfPrintFolhaApropiacao
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47EAC579-8105-42D5-8736-ABDF193FBF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EAC579-8105-42D5-8736-ABDF193FBF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EAC579-8105-42D5-8736-ABDF193FBF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EAC579-8105-42D5-8736-ABDF193FBF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38542BED-1B73-4827-AD00-315D065F1AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38542BED-1B73-4827-AD00-315D065F1AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38542BED-1B73-4827-AD00-315D065F1AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38542BED-1B73-4827-AD00-315D065F1AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B002950-3659-4A00-8973-76ACA3694ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B002950-3659-4A00-8973-76ACA3694ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B002950-3659-4A00-8973-76ACA3694ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B002950-3659-4A00-8973-76ACA3694ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C4AB64-E16A-455F-BE03-EA24204C7A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C4AB64-E16A-455F-BE03-EA24204C7A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C4AB64-E16A-455F-BE03-EA24204C7A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C4AB64-E16A-455F-BE03-EA24204C7A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE979AA-7077-467D-B211-5B0CABA905FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE979AA-7077-467D-B211-5B0CABA905FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE979AA-7077-467D-B211-5B0CABA905FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE979AA-7077-467D-B211-5B0CABA905FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

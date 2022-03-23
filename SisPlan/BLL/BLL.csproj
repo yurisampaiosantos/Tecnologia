@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92A48B2C-1D25-4944-9689-B91180BE836C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SisPLAN.net\bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcAcuracidadeBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AcAvancoBkpBLL.cs" />
+    <Compile Include="AcAvancoCompletacaoBLL.cs" />
+    <Compile Include="AcAvnCriterioBLL.cs" />
+    <Compile Include="AcAvnGrupoCriterioBLL.cs" />
+    <Compile Include="AcControleFolhaServicoBLL.cs" />
+    <Compile Include="AcControleProducao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AcControleProducaoLogBLL.cs" />
+    <Compile Include="AcCorridaMaterialBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AcCorridaMaterialItemBLL.cs" />
+    <Compile Include="AcItemControleBLL.cs" />
+    <Compile Include="AcLocalizacaoBLL.cs" />
+    <Compile Include="AcMateriaisPendentesBLL.cs" />
+    <Compile Include="AcMontagemTubulacaoBLL.cs" />
+    <Compile Include="AcPrevisaoEngenhariaBLL.cs" />
+    <Compile Include="AcRamAtividadeBLL.cs" />
+    <Compile Include="AcRamAtividadeStageBLL.cs" />
+    <Compile Include="AcRegiaoBLL.cs" />
+    <Compile Include="AcResumoSemanalAtividades.cs" />
+    <Compile Include="AcSetorBLL.cs" />
+    <Compile Include="AcSpoolsPendentesBLL.cs" />
+    <Compile Include="AcStatusFoseUpdtCntrlBLL.cs" />
+    <Compile Include="AcStatusMateriaisBLL.cs" />
+    <Compile Include="AcStatusTubBLL.cs" />
+    <Compile Include="AcUnidadeRegionalBLL.cs" />
+    <Compile Include="AcUnidadeRegionalSISEPCBLL.cs" />
+    <Compile Include="CpAreaBLL.cs" />
+    <Compile Include="CpAreaRespPendenciaBLL.cs" />
+    <Compile Include="CpEscopoBLL.cs" />
+    <Compile Include="CpLocalizacaoBLL.cs" />
+    <Compile Include="CpMaterialPendenteBLL.cs" />
+    <Compile Include="CpMovimentoBLL.cs" />
+    <Compile Include="CpPastaBLL.cs" />
+    <Compile Include="CpPastaResumoBLL.cs" />
+    <Compile Include="CpPastaResumoSubgrupoBLL.cs" />
+    <Compile Include="CpPunchlistBLL.cs" />
+    <Compile Include="CpStatusMovimentoBLL.cs" />
+    <Compile Include="CpSubsistemaOperacionalBLL.cs" />
+    <Compile Include="CpTipoPendenciaBLL.cs" />
+    <Compile Include="CpUsuarioBLL.cs" />
+    <Compile Include="ElAvnFoseBLL.cs" />
+    <Compile Include="ElControleGeralEitBLL.cs" />
+    <Compile Include="IntLocaisBLL.cs" />
+    <Compile Include="IntTarefasBLL.cs" />
+    <Compile Include="LoggedUserBLL.cs" />
+    <Compile Include="ProjEleRcptBLL.cs" />
+    <Compile Include="ProjEstPcDimensionBLL.cs" />
+    <Compile Include="ProjEstRcptBLL.cs" />
+    <Compile Include="ProjGenEmailBLL.cs" />
+    <Compile Include="ProjJusRcptBLL.cs" />
+    <Compile Include="ProjOutRcptBLL.cs" />
+    <Compile Include="ProjPlatAreaBLL.cs" />
+    <Compile Include="ProjTubHistoryBLL.cs" />
+    <Compile Include="ProjTubLogBLL.cs" />
+    <Compile Include="ProjTubRcptBLL.cs" />
+    <Compile Include="ProjTubRcptTeeWeeBLL.cs" />
+    <Compile Include="AcGrupoCriterioBLL.cs" />
+    <Compile Include="AcPendenciaFolhaServicoBLL.cs" />
+    <Compile Include="AcPendenciaMaterialBLL.cs" />
+    <Compile Include="AcSemanaBLL.cs" />
+    <Compile Include="BaseBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VwAcAcuracidadeBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwAcAtributoPersonalizadoBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwAcEstoqueMaterialBLL.cs" />
+    <Compile Include="VwAcGrupoCriterioMedicaoBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwAcQuantidadeAtividadeBLL.cs" />
+    <Compile Include="VwAcRecebimentoMateriaisBLL.cs" />
+    <Compile Include="VwAvnFoseEletricaBLL.cs" />
+    <Compile Include="VwCpMaterialPendenteBLL.cs" />
+    <Compile Include="VwCpMovimentoBLL.cs" />
+    <Compile Include="VwCpPastaBLL.cs" />
+    <Compile Include="VwCpPastaUltMovBLL.cs" />
+    <Compile Include="VwCpPunchlistBLL.cs" />
+    <Compile Include="VwGrupoCriterioMedicaoBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VwGrupoCriterioMedicaoFullBLL.cs" />
+    <Compile Include="VwRmItemBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9ecb2d55-1f3f-47c2-aebe-492403a8eb62}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{d477c379-36c1-4256-8096-e7db22d1d1e9}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
